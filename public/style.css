@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #f4f7f6; /* Halka grey background */
-    color: #333;
+    background-color: black; /* Halka grey background */
+    color: white;
     padding: 20px;
 }
 
@@ -29,7 +29,6 @@ body {
     margin-top: 5px;
 }
 
-/* Fully Responsive Grid Container */
 .container {
     display: grid;
     /* Ye line ise responsive banati hai: Minimum 280px width, max 1 fraction */
@@ -39,7 +38,7 @@ body {
     margin: 0 auto;
 }
 
-/* Card Styling - Ekdam Clean */
+
 .card {
     background: #ffffff;
     border-radius: 12px;
@@ -52,13 +51,13 @@ body {
     justify-content: space-between;
 }
 
-/* Hover Effect */
+
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Profile Image */
+
 .card img {
     width: 110px;
     height: 110px;
@@ -86,7 +85,7 @@ body {
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
-    flex-grow: 1; /* Bio chota/bada hone par card ka size balance rakhega */
+    flex-grow: 1;
 }
 
 .links {
@@ -106,17 +105,11 @@ body {
 }
 
 .links a.github {
-    background-color: #333;
+    background-color: black;
 }
 
-.links a.github:hover {
-    background-color: #111;
-}
-
+ 
 .links a.linkedin {
-    background-color: #0077b5;
+    background-color: black;
 }
 
-.links a.linkedin:hover {
-    background-color: #005582;
-}

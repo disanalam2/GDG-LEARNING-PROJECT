@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Founders Team</title>
+    <!-- CSS file ko link kar rahe hain -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Meet Our Founders</h1>
+
+    <!-- Ek khali container jahan JS ke through data aayega -->
+    <div id="founders-container" class="container"></div>
+
+    <!-- JS file ko link kar rahe hain -->
+    <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBVZUJJ0GXuq6xqCCN5BMSOyHXRL2VssCQ",
+            authDomain: "gdg-learning-project.firebaseapp.com",
+            projectId: "gdg-learning-project",
+            storageBucket: "gdg-learning-project.firebasestorage.app",
+            messagingSenderId: "937516910825",
+            appId: "1:937516910825:web:b21af8fad957e6b8388878",
+            measurementId: "G-G08EY8TPXE"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>

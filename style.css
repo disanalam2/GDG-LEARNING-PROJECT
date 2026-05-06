@@ -1,0 +1,122 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7f6; /* Halka grey background */
+    color: #333;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #111;
+}
+
+.header p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+/* Fully Responsive Grid Container */
+.container {
+    display: grid;
+    /* Ye line ise responsive banati hai: Minimum 280px width, max 1 fraction */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styling - Ekdam Clean */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image */
+.card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+    border: 3px solid #e0e0e0;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.dept {
+    color: #007bff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.bio {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Bio chota/bada hone par card ka size balance rakhega */
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.links a.github {
+    background-color: #333;
+}
+
+.links a.github:hover {
+    background-color: #111;
+}
+
+.links a.linkedin {
+    background-color: #0077b5;
+}
+
+.links a.linkedin:hover {
+    background-color: #005582;
+}
